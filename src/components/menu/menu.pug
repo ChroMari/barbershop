@@ -1,0 +1,10 @@
+- const links = ['Информация', 'Новости', 'Прайс-лист', 'Магазин', 'Контакты'];
+
+mixin menu(activeLink)
+  ul.menu
+    for link in links
+      li.menu__item
+        if link==activeLink 
+          a(href="#" class='menu__link menu__link_active') #{link}
+        else
+          a(href="#" class='menu__link') #{link}

@@ -73,7 +73,7 @@ export const fontsStyle = () => {
         const weight = numberFontWeight[fontWeight.toLowerCase()];
 
         fontWeight = weight ? weight : 400;
-        fs.appendFile(fontsFile, `@font-face {\n\tfont-family: ${fontName};\n\tfont-display: swap;\n\tsrc: url("${fontFileName}.woff2") format("woff2"), url("${fontFileName}.woff") format("woff");\n\tfont-weight: ${fontWeight};\n\tfont-style: normal;\n}\r\n`, () => {});
+        fs.appendFile(fontsFile, `@font-face {\n\tfont-family: ${fontName};\n\tfont-display: swap;\n\tsrc: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff") format("woff");\n\tfont-weight: ${fontWeight};\n\tfont-style: normal;\n}\r\n`, () => {});
         newFileOnly = fontFileName;
       }
     }

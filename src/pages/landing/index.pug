@@ -1,5 +1,4 @@
 include ../../components/header/header.pug
-include ../../components/welcome/welcome.pug
 
 doctype html
 html(lang="en")
@@ -8,10 +7,8 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="css/style.min.css")
-    title Document
+    title BarberShop
   body
-    +header
-    +welcome
+    +header(false)
     main
-    include ../../components/footer/footer.pug
     script(src='js/app.min.js')

@@ -1,0 +1,10 @@
+- const logoMainUrl = `./img/svgicons/index-logo.svg`
+
+mixin logo(typeLogo)
+  if typeLogo=='menu'
+    a(href='#', class='logo')
+      img(src="", alt="", class='logo__img') 
+
+  if typeLogo=='main'
+    a(href='#', class='logo')
+      img(src=logoMainUrl, alt="", class='logo__img logo__img-main') 

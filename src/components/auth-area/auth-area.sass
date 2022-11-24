@@ -1,0 +1,31 @@
+@import '../../scss/constans'
+
+.auth-area
+  list-style: none
+
+.auth-area__button
+  display: flex
+  align-items: center
+
+  background: none
+  outline: none
+  border: none
+  color: $font-color-base
+  padding: 25px 20px
+  transition: .5s ease
+  font-family: PTSansNarrow, Arial, sans-serif
+  font-size: 1.7rem
+  line-height: 2rem
+  font-weight: 700
+  text-transform: uppercase
+  cursor: pointer
+  &:hover
+    background-color: $menu-hover-color-base
+    .auth-area__img
+      opacity: 1
+
+.auth-area__img
+  display: inline-block
+  margin-right: 15px
+  opacity: 0.3
+  transition: .5s ease
