@@ -1,4 +1,7 @@
 include ../../components/header/header.pug
+include ../../components/advantages/advantages.pug
+include ../../components/news/news.pug
+include ../../components/photo/photo.pug
 
 doctype html
 html(lang="en")
@@ -11,4 +14,8 @@ html(lang="en")
   body
     +header(false)
     main
+    +advantages
+    .news-photo.container
+      +news
+      +photo
     script(src='js/app.min.js')

@@ -1,0 +1,11 @@
+- const datasNews = [ { text: 'Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки!', time: '18 января', }, { text: 'В нашей команде пополнение, Борис «БРИТВА» Стригунец, обладатель множества титулов и наград поплнил наши стройные ряды', time: '10 января', }, ];
+
+mixin news()
+  section.news
+    h2.section__title Новости
+    ul.news__list
+      each data in datasNews
+        li.news__item
+          p.news__text #{data.text}
+          time.news__time #{data.time}
+    button(type="button", class="button") Все новости 
