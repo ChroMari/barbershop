@@ -1,7 +1,11 @@
+include ../section-title/section-title.pug
+include ../button/button.pug
+
 mixin photo()
   section.photo
-    h2.section__title Фотогалерея
-    img(src="", alt="", srcset="")
+    +section-title('Фотогалерея', 'h2')
+    .photo__slider
+      img(class=".photo__img", src="./img/gallery-photo-small-1.jpg", alt="")
     .photo__buttons
-      button(type="button", class="button") Назад
-      button(type="button", class="button") Вперед
+      +button('Назад')
+      +button('Вперед')

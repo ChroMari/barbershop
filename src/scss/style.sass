@@ -2,6 +2,8 @@
 @import '../components/components-styles.sass'
 @import './constans'
 
+@import '../pages/landing/index.sass'
+
 *,
 *::after,
 *::before
@@ -18,6 +20,9 @@ body
   line-height: 2.4rem
   font-weight: 700
   background-color: $bg-color-base
+  background-image: url('../img/bg.jpg')
+  background-repeat: no-repeat
+  background-position: center top
   color: $font-color-base
   text-transform: uppercase
 
@@ -25,29 +30,3 @@ body
   max-width: 960px
   padding: 0 10px
   margin: auto
-
-.news-photo
-  margin-top: 79px
-  padding: 44px 91px
-  display: flex
-  align-items: start
-
-.section__title
-  margin-bottom: 20px
-  font-size: 3rem
-  line-height: 4.2rem
-
-.button
-  padding: 10px 33px
-  font: inherit
-  text-align: center
-  color: #ffffff
-  text-transform: uppercase
-  background-color: #000000
-  border: none
-  outline: none
-  letter-spacing: 0.2px
-  transition: .5s ease
-  cursor: pointer
-  &:hover
-    background-color: #663d15

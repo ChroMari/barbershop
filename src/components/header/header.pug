@@ -4,10 +4,9 @@ include ../../components/logo/logo.pug
 
 mixin header(isLogo)
   header.header
-    .container
-      .header__top-menu
-        nav.header__menu
-          +menu
-          +auth-area('sing-in')
-      .header__logo 
+    .header__top-menu
+      nav.header__menu.container
+        +menu
+        +auth-area('sing-in')
+    .header__logo.container 
         +logo('main')
